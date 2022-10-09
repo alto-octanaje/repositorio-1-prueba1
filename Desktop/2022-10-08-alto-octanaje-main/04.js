@@ -10,20 +10,12 @@ function doble(array) {
   //doble([1, 2, 3]) devuelve [2, 4, 6]
   // Tu código aca:
   //termininado... 
-  let arr = string.split('');
-  let nuevoArray = [];
-  for ( let i = 0 ; i < arr.length ; i ++ ) {
-      nuevoArray.push(Number(arr[i]));
-    }
-  for ( let i = 0 ; i < nuevoArray.length ; i ++ ) {
-     if ( nuevoArray[i] < 5 ) {
-          nuevoArray[i] = 0;
-        } else {
-          nuevoArray[i] = 1;
-        }
-    }
-    let stringOtraVez = nuevoArray.join('');
-    return stringOtraVez;
+  let nuevo=[];
+  for (let i = 0; i < array.length; i++) {
+    nuevo.push(array[i]*2)
+    
+  }
+  return nuevo
 }
 
 // No modifiques nada debajo de esta linea //
